@@ -1,0 +1,93 @@
+.color-picker {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.color-display {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.color-value {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.sliders {
+    margin: 20px 0;
+}
+
+.slider-group {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.slider-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.slider {
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+}
+
+.slider.red {
+    background: linear-gradient(to right, black, red);
+}
+
+.slider.green {
+    background: linear-gradient(to right, black, green);
+}
+
+.slider.blue {
+    background: linear-gradient(to right, black, blue);
+}
+
+.save-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.save-btn:hover {
+    background: #218838;
+}
+.saved-colors {
+    margin-top: 30px;
+}
+.color-palette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.saved-color {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.saved-color:hover {
+    transform: scale(1.1);
+}
